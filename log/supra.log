@@ -1,0 +1,1096 @@
+
+Total IO  : 498
+Total Pin : 251/33
+Top array is built.
+Loading architect libraries...
+## CPU time: 0:0:0, REAL time: 0:0:0
+## Memory Usage: 57MB (57MB)
+Loading route table...
+## CPU time: 0:0:13, REAL time: 0:0:15
+## Memory Usage: 870MB (870MB)
+Warn: Pin ddr2_dq[6] in file ./quartus_logs/test_Briey.pin line 75 is not found in design.
+Warn: Pin ddr2_dqs[0] in file ./quartus_logs/test_Briey.pin line 76 is not found in design.
+Warn: Pin ddr2_dq[2] in file ./quartus_logs/test_Briey.pin line 77 is not found in design.
+Warn: Pin ddr2_dq[3] in file ./quartus_logs/test_Briey.pin line 91 is not found in design.
+Warn: Pin ddr2_dq[1] in file ./quartus_logs/test_Briey.pin line 92 is not found in design.
+Warn: Pin ddr2_dq[4] in file ./quartus_logs/test_Briey.pin line 93 is not found in design.
+Warn: Pin gpio[2] in file ./quartus_logs/test_Briey.pin line 104 is not found in design.
+Warn: Pin ddr2_dq[7] in file ./quartus_logs/test_Briey.pin line 140 is not found in design.
+Warn: Pin ddr2_dq[0] in file ./quartus_logs/test_Briey.pin line 141 is not found in design.
+Warn: Pin ddr2_dq[5] in file ./quartus_logs/test_Briey.pin line 142 is not found in design.
+Warn: Pin gpio[1] in file ./quartus_logs/test_Briey.pin line 171 is not found in design.
+Warn: Pin gpio[0] in file ./quartus_logs/test_Briey.pin line 280 is not found in design.
+Warn: Pin gpio[3] in file ./quartus_logs/test_Briey.pin line 295 is not found in design.
+Using design VERILOG file ./simulation/modelsim/test_Briey.vo.
+Using design VE file .
+Preparing design...
+## CPU time: 0:0:1, REAL time: 0:0:2
+## Memory Usage: 896MB (896MB)
+Pseudo pack design...
+VCO frequency: 384.000 Mhz
+  clkout0: Enabled , 128.000 Mhz
+  clkout1: Enabled , 64.000 Mhz
+  clkout2: Enabled , 128.000 Mhz
+  clkout3: Enabled , 128.000 Mhz
+  clkout4: Disabled, 0.750 Mhz
+VCO frequency: 960.000 Mhz
+  clkout0: Enabled , 320.000 Mhz
+  clkout1: Enabled , 64.000 Mhz
+  clkout2: Disabled, 1.875 Mhz
+  clkout3: Disabled, 1.875 Mhz
+  clkout4: Disabled, 1.875 Mhz
+Info: Found dd input register for pad ddr2_dq[2] in tile pos X11_Y28_N4, X11_Y28_N18, and X11_Y28_N2.
+Info: Located 3 logic slices for pin ddr2_dq[2], loc: (26,28), 0 => 2.
+Info: Found dd input register for pad ddr2_dq[4] in tile pos X11_Y28_N6, X11_Y28_N14, and X11_Y28_N8.
+Info: Located 3 logic slices for pin ddr2_dq[4], loc: (26,28), 3 => 5.
+Info: Found dd input register for pad ddr2_dq[5] in tile pos X14_Y28_N14, X14_Y28_N18, and X14_Y28_N6.
+Info: Located 3 logic slices for pin ddr2_dq[5], loc: (26,28), 6 => 8.
+Info: Found dd input register for pad ddr2_dq[6] in tile pos X5_Y28_N12, X5_Y28_N4, and X5_Y28_N20.
+Info: Located 3 logic slices for pin ddr2_dq[6], loc: (21,28), 0 => 2.
+Info: Found dd input register for pad ddr2_dq[3] in tile pos X5_Y28_N10, X5_Y28_N18, and X5_Y28_N6.
+Info: Located 3 logic slices for pin ddr2_dq[3], loc: (21,28), 3 => 5.
+Info: Found dd input register for pad ddr2_dq[0] in tile pos X7_Y28_N14, X7_Y28_N18, and X7_Y28_N4.
+Info: Located 3 logic slices for pin ddr2_dq[0], loc: (22,28), 0 => 2.
+Info: Found dd input register for pad ddr2_dq[7] in tile pos X7_Y28_N26, X7_Y28_N6, and X7_Y28_N8.
+Info: Located 3 logic slices for pin ddr2_dq[7], loc: (22,28), 3 => 5.
+Info: Found dd input register for pad ddr2_dq[1] in tile pos X9_Y28_N6, X9_Y28_N18, and X9_Y28_N16.
+Info: Located 3 logic slices for pin ddr2_dq[1], loc: (24,28), 0 => 2.
+Packing Statistics
+ Total      Logics : 7323/16624 ( 44%)
+ Total        LUTs : 7112/16624 ( 42%)
+ Total   Registers : 4268/16624 ( 25%)
+ Total  Block Rams :   42/   56 ( 75%)
+ Total Multipliers :    4/   56 (  7%)
+ Total        PLLs :    2/    4 ( 50%)
+ Total        Pins :   52/  251 ( 20%)
+ Global    Signals :   14/   20 ( 70%)
+                                                           auto_generated_inst.hbo_22_37669648e7eea550_bp (from:         DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1_CLK_bus[0])
+                                                           auto_generated_inst.hbo_22_ac3b434e1bb04734_bp (from:         DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1_CLK_bus[1])
+                                                           auto_generated_inst.hbo_22_83e7edc94e6c7579_bp (from:         DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1_CLK_bus[2])
+                                                       DDR2_inst0|infrastructure0|rst_tmp~0clkctrl_outclk (from:                                       DDR2_inst0|infrastructure0|rst_tmp~0_combout)
+            DDR2_inst0|top_00|user_interface_00|backend_fifos_00|rd_wr_addr_fifo_00|rst_r1~clkctrl_outclk (from:   DDR2_inst0|top_00|user_interface_00|backend_fifos_00|rd_wr_addr_fifo_00|rst_r1~q)
+              DDR2_inst0|top_00|user_interface_00|backend_fifos_00|wr_data_fifo_160|rst_r1~clkctrl_outclk (from:     DDR2_inst0|top_00|user_interface_00|backend_fifos_00|wr_data_fifo_160|rst_r1~q)
+                   dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|fast_clock~clkctrl_outclk (from:                                     auto_generated_inst.hbo_22_4b489d2dd513dacb_bp)
+               DDR2_inst0|infrastructure0|altpll_component|auto_generated|wire_pll1_clk[3]~clkctrl_outclk (from:                                     auto_generated_inst.hbo_22_58c217823242ed5a_bp)
+      dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|wire_lvds_tx_pll_clk[1]~clkctrl_outclk (from:                                     auto_generated_inst.hbo_22_798600510a0d594a_bp)
+                                                                     bdcer_u0|debounce_rst~clkctrl_outclk (from:                                                            bdcer_u0|debounce_rst~q)
+                                                                                     comb~0clkctrl_outclk (from:                                                                     comb~0_combout)
+                                         cpu_pll_u0|altpll_component|auto_generated|locked~clkctrl_outclk (from:                          cpu_pll_u0|altpll_component|auto_generated|locked~combout)
+                                                                 cpu_u0|resetCtrl_axiReset~clkctrl_outclk (from:                                                        cpu_u0|resetCtrl_axiReset~q)
+                                                                              sys_clk~inputclkctrl_outclk (from:                                                                    sys_clk~input_o)
+ Total Lonely   Datain   : 1205
+ Total Lonely   Register : 211
+ Total LUT-FF   Pairs    : 2158
+ Total Register Packings : 694
+ Registers with synchronous    reset : 339
+ Registers with asynchronous   reset : 1075
+ Registers with sync and async reset : 67
+## CPU time: 0:0:0, REAL time: 0:0:1
+## Memory Usage: 873MB (896MB)
+Filter verilog...
+## CPU time: 0:0:0, REAL time: 0:0:0
+## Memory Usage: 873MB (896MB)
+Reading DB design...
+## CPU time: 0:0:0, REAL time: 0:0:1
+## Memory Usage: 880MB (896MB)
+Processing design...
+> # agm_attribute to instance assignments
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to hdmi_d2_n~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to uart_txd~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to hdmi_d1_p~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to hdmi_d1_n~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to hdmi_d0_p~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to hdmi_d0_n~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to gpio[1]~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to hdmi_clk_p~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to hdmi_clk_n~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to gpio[2]~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to gpio[0]~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to gpio[3]~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to hdmi_d2_p~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[2].u_iob_dq|oddr_dq|ALTDDIO_OUT_component|auto_generated|ddio_outa[0] false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[4].u_iob_dq|oddr_dq|ALTDDIO_OUT_component|auto_generated|ddio_outa[0] false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[12].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[5].u_iob_dq|oddr_dq|ALTDDIO_OUT_component|auto_generated|ddio_outa[0] false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|obuf_ras|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_cke[0].u_obuf_cke|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[0].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_ba[2].u_obuf_ba|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[14].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_ba[0].u_obuf_ba|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[10].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[9].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[6].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[4].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[5].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|obuf_we|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to ddr2_ck_n[0]~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to ddr2_ck[0]~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[13].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[8].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[3].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[11].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[1].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[2].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_addr[7].u_obuf_addr|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dm_inst.gen_dm[0].u_iob_dm|oddr_dm|ALTDDIO_OUT_component|auto_generated|ddio_outa[0] false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_ba[1].u_obuf_ba|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_cs_n[0].u_obuf_cs_n|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|obuf_cas|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[6].u_iob_dq|oddr_dq|ALTDDIO_OUT_component|auto_generated|ddio_outa[0] false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[3].u_iob_dq|oddr_dq|ALTDDIO_OUT_component|auto_generated|ddio_outa[0] false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|controller_iobs_00|gen_odt[0].u_obuf_odt|obufa_0 false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[0].u_iob_dq|oddr_dq|ALTDDIO_OUT_component|auto_generated|ddio_outa[0] false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[7].u_iob_dq|oddr_dq|ALTDDIO_OUT_component|auto_generated|ddio_outa[0] false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to ddr2_dqs[0]~output false
+> set_instance_assignment -name ENABLE_OPEN_DRAIN -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[1].u_iob_dq|oddr_dq|ALTDDIO_OUT_component|auto_generated|ddio_outa[0] false
+> set_instance_assignment -extension -name CLKIN_FREQ -to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1 100
+> set_instance_assignment -extension -name CLKIN_FREQ -to dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll 64
+> set_location_assignment -to ddr2_a PIN_D3
+> set_location_assignment -to ddr2_a[0] PIN_D3
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[0] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[10] PIN_A10
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[10] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[11] PIN_B13
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[11] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[12] PIN_C8
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[12] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[13] PIN_A14
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[13] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[14] PIN_C9
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[14] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[1] PIN_C14
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[1] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[2] PIN_D14
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[2] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[3] PIN_D12
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[3] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[4] PIN_A15
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[4] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[5] PIN_A11
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[5] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[6] PIN_A13
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[6] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[7] PIN_D11
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[7] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[8] PIN_B14
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[8] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_a[9] PIN_B10
+> set_instance_assignment -name IO_STANDARD -to ddr2_a[9] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_ba PIN_D9
+> set_location_assignment -to ddr2_ba[0] PIN_D9
+> set_instance_assignment -name IO_STANDARD -to ddr2_ba[0] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_ba[1] PIN_B4
+> set_instance_assignment -name IO_STANDARD -to ddr2_ba[1] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_ba[2] PIN_E9
+> set_instance_assignment -name IO_STANDARD -to ddr2_ba[2] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_cas_n PIN_A3
+> set_instance_assignment -name IO_STANDARD -to ddr2_cas_n "SSTL-18 Class I"
+> set_location_assignment -to ddr2_ck PIN_B12
+> set_location_assignment -to ddr2_ck[0] PIN_B12
+> set_instance_assignment -name IO_STANDARD -to ddr2_ck[0] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_ck_n PIN_A12
+> set_location_assignment -to ddr2_ck_n[0] PIN_A12
+> set_instance_assignment -name IO_STANDARD -to ddr2_ck_n[0] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_cke PIN_C3
+> set_location_assignment -to ddr2_cke[0] PIN_C3
+> set_instance_assignment -name IO_STANDARD -to ddr2_cke[0] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_cs_n PIN_D5
+> set_location_assignment -to ddr2_cs_n[0] PIN_D5
+> set_instance_assignment -name IO_STANDARD -to ddr2_cs_n[0] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_dm PIN_A4
+> set_location_assignment -to ddr2_dm[0] PIN_A4
+> set_instance_assignment -name IO_STANDARD -to ddr2_dm[0] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_dq PIN_E7
+> set_location_assignment -to ddr2_dq[0] PIN_E7
+> set_instance_assignment -name IO_STANDARD -to ddr2_dq[0] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_dq[1] PIN_B6
+> set_instance_assignment -name IO_STANDARD -to ddr2_dq[1] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_dq[2] PIN_A7
+> set_instance_assignment -name IO_STANDARD -to ddr2_dq[2] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_dq[3] PIN_B5
+> set_instance_assignment -name IO_STANDARD -to ddr2_dq[3] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_dq[4] PIN_B7
+> set_instance_assignment -name IO_STANDARD -to ddr2_dq[4] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_dq[5] PIN_E8
+> set_instance_assignment -name IO_STANDARD -to ddr2_dq[5] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_dq[6] PIN_A5
+> set_instance_assignment -name IO_STANDARD -to ddr2_dq[6] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_dq[7] PIN_E6
+> set_instance_assignment -name IO_STANDARD -to ddr2_dq[7] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_dqs PIN_A6
+> set_location_assignment -to ddr2_dqs[0] PIN_A6
+> set_instance_assignment -name IO_STANDARD -to ddr2_dqs[0] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_odt PIN_D6
+> set_location_assignment -to ddr2_odt[0] PIN_D6
+> set_instance_assignment -name IO_STANDARD -to ddr2_odt[0] "SSTL-18 Class I"
+> set_location_assignment -to ddr2_ras_n PIN_B3
+> set_instance_assignment -name IO_STANDARD -to ddr2_ras_n "SSTL-18 Class I"
+> set_location_assignment -to ddr2_we_n PIN_B11
+> set_instance_assignment -name IO_STANDARD -to ddr2_we_n "SSTL-18 Class I"
+> set_location_assignment -to gpio PIN_P2
+> set_location_assignment -to gpio[0] PIN_P2
+> set_instance_assignment -name IO_STANDARD -to gpio[0] "3.3-V LVCMOS"
+> set_location_assignment -to gpio[1] PIN_G5
+> set_instance_assignment -name IO_STANDARD -to gpio[1] "3.3-V LVCMOS"
+> set_location_assignment -to gpio[2] PIN_C2
+> set_instance_assignment -name IO_STANDARD -to gpio[2] "3.3-V LVCMOS"
+> set_location_assignment -to gpio[3] PIN_R1
+> set_instance_assignment -name IO_STANDARD -to gpio[3] "3.3-V LVCMOS"
+> set_location_assignment -to hdmi_clk_n PIN_F1
+> set_instance_assignment -name IO_STANDARD -to hdmi_clk_n "3.3-V LVCMOS"
+> set_location_assignment -to hdmi_clk_p PIN_F2
+> set_instance_assignment -name IO_STANDARD -to hdmi_clk_p "3.3-V LVCMOS"
+> set_location_assignment -to hdmi_d0_n PIN_G1
+> set_instance_assignment -name IO_STANDARD -to hdmi_d0_n "3.3-V LVCMOS"
+> set_location_assignment -to hdmi_d0_p PIN_G2
+> set_instance_assignment -name IO_STANDARD -to hdmi_d0_p "3.3-V LVCMOS"
+> set_location_assignment -to hdmi_d1_n PIN_J1
+> set_instance_assignment -name IO_STANDARD -to hdmi_d1_n "3.3-V LVCMOS"
+> set_location_assignment -to hdmi_d1_p PIN_J2
+> set_instance_assignment -name IO_STANDARD -to hdmi_d1_p "3.3-V LVCMOS"
+> set_location_assignment -to hdmi_d2_n PIN_K1
+> set_instance_assignment -name IO_STANDARD -to hdmi_d2_n "3.3-V LVCMOS"
+> set_location_assignment -to hdmi_d2_p PIN_K2
+> set_instance_assignment -name IO_STANDARD -to hdmi_d2_p "3.3-V LVCMOS"
+> set_location_assignment -to sys_clk PIN_E1
+> set_instance_assignment -name IO_STANDARD -to sys_clk "3.3-V LVCMOS"
+> set_location_assignment -to sys_rst PIN_B16
+> set_instance_assignment -name IO_STANDARD -to sys_rst "1.8 V"
+> set_location_assignment -to uart_rxd PIN_L1
+> set_instance_assignment -name IO_STANDARD -to uart_rxd "3.3-V LVCMOS"
+> set_location_assignment -to uart_txd PIN_L2
+> set_instance_assignment -name IO_STANDARD -to uart_txd "3.3-V LVCMOS"
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[6].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_h[0] {21 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[3].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_latch_l[0] {21 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[6].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_l[0] {21 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[6].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_latch_l[0] {21 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[3].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_h[0] {21 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[3].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_l[0] {21 28}
+> set_instance_assignment -extension -name FIXED_COORD -to clken_ctrl_X5021_Y5028_N0 {21 28}
+> set_instance_assignment -extension -name FIXED_COORD -to asyncreset_ctrl_X5021_Y5028_N0 {21 28}
+> set_instance_assignment -extension -name FIXED_COORD -to clken_ctrl_X5021_Y5028_N1 {21 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[0].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_h[0] {22 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[7].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_latch_l[0] {22 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[0].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_l[0] {22 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[0].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_latch_l[0] {22 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[7].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_h[0] {22 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[7].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_l[0] {22 28}
+> set_instance_assignment -extension -name FIXED_COORD -to clken_ctrl_X5022_Y5028_N0 {22 28}
+> set_instance_assignment -extension -name FIXED_COORD -to asyncreset_ctrl_X5022_Y5028_N0 {22 28}
+> set_instance_assignment -extension -name FIXED_COORD -to clken_ctrl_X5022_Y5028_N1 {22 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[1].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_h[0] {24 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[1].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_l[0] {24 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[1].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_latch_l[0] {24 28}
+> set_instance_assignment -extension -name FIXED_COORD -to clken_ctrl_X5024_Y5028_N0 {24 28}
+> set_instance_assignment -extension -name FIXED_COORD -to asyncreset_ctrl_X5024_Y5028_N0 {24 28}
+> set_instance_assignment -extension -name FIXED_COORD -to clken_ctrl_X5024_Y5028_N1 {24 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[2].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_h[0] {26 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[4].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_latch_l[0] {26 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[5].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_h[0] {26 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[5].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_l[0] {26 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[5].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_latch_l[0] {26 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[2].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_l[0] {26 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[2].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_latch_l[0] {26 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[4].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_h[0] {26 28}
+> set_instance_assignment -extension -name FIXED_COORD -to DDR2_inst0|top_00|iobs_00|data_path_iobs_00|gen_dq[4].u_iob_dq|iddr_dq|ALTDDIO_IN_component|auto_generated|input_cell_l[0] {26 28}
+> set_instance_assignment -extension -name FIXED_COORD -to clken_ctrl_X5026_Y5028_N0 {26 28}
+> set_instance_assignment -extension -name FIXED_COORD -to asyncreset_ctrl_X5026_Y5028_N0 {26 28}
+> set_instance_assignment -extension -name FIXED_COORD -to clken_ctrl_X5026_Y5028_N1 {26 28}
+Info: Found tie LOW cell DDR2_inst0|top_00|user_interface_00|backend_fifos_00|rd_wr_addr_fifo_00|ccd_fifo_input_addr_bit[28].ccd_addr_u|din_s1.
+Info: Found GCLK net cpu_pll_u0|altpll_component|auto_generated|locked~clkctrl_outclk (1).
+Info: Found GCLK net bdcer_u0|debounce_rst~clkctrl_outclk (4).
+Info: Found GCLK net sys_clk~inputclkctrl_outclk (1).
+Info: Found GCLK net DDR2_inst0|infrastructure0|rst_tmp~0clkctrl_outclk (2).
+Info: Found GCLK net DDR2_inst0|top_00|user_interface_00|backend_fifos_00|wr_data_fifo_160|rst_r1~clkctrl_outclk (12).
+Info: Found GCLK net DDR2_inst0|top_00|user_interface_00|backend_fifos_00|rd_wr_addr_fifo_00|rst_r1~clkctrl_outclk (14).
+Info: Found GCLK net comb~0clkctrl_outclk (16).
+Info: Found GCLK net cpu_u0|resetCtrl_axiReset~clkctrl_outclk (99).
+Info: Found GCLK net dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|wire_lvds_tx_pll_clk[1]~clkctrl_outclk (8).
+Info: Found GCLK net dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|fast_clock~clkctrl_outclk (20).
+Info: Found GCLK net auto_generated_inst.hbo_22_83e7edc94e6c7579_bp (26).
+Info: Found GCLK net auto_generated_inst.hbo_22_ac3b434e1bb04734_bp (38).
+Info: Found GCLK net auto_generated_inst.hbo_22_37669648e7eea550_bp (193).
+Info: Found GCLK net DDR2_inst0|infrastructure0|altpll_component|auto_generated|wire_pll1_clk[3]~clkctrl_outclk (596).
+Info: Top level output port ddr2_dq[7] is identified as an inout.
+Info: Top level output port ddr2_dq[6] is identified as an inout.
+Info: Top level output port ddr2_dq[5] is identified as an inout.
+Info: Top level output port ddr2_dq[4] is identified as an inout.
+Info: Top level output port ddr2_dq[3] is identified as an inout.
+Info: Top level output port ddr2_dq[2] is identified as an inout.
+Info: Top level output port ddr2_dq[1] is identified as an inout.
+Info: Top level output port ddr2_dq[0] is identified as an inout.
+Info: Top level output port gpio[3] is identified as an inout.
+Info: Top level output port gpio[2] is identified as an inout.
+Info: Top level output port gpio[1] is identified as an inout.
+> set_global_assignment -name DEVICE_IO_STANDARD "3.3-V LVTTL"
+> set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+> read_qip "rd_ccd_fifo.qip"
+> set_global_assignment -name IP_TOOL_NAME "FIFO"
+> set_global_assignment -name IP_TOOL_VERSION "18.1"
+> set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Cyclone IV E}"
+> set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "rd_ccd_fifo.v"]
+> read_qip "cpu_pll.qip"
+> set_global_assignment -name IP_TOOL_NAME "ALTPLL"
+> set_global_assignment -name IP_TOOL_VERSION "18.1"
+> set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Cyclone IV E}"
+> set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "cpu_pll.v"]
+> set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "cpu_pll.ppf"]
+> read_qip "ccd_fifo.qip"
+> set_global_assignment -name IP_TOOL_NAME "FIFO"
+> set_global_assignment -name IP_TOOL_VERSION "18.1"
+> set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Cyclone IV E}"
+> set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "ccd_fifo.v"]
+> read_qip "addr_ccd_fifo.qip"
+> set_global_assignment -name IP_TOOL_NAME "FIFO"
+> set_global_assignment -name IP_TOOL_VERSION "18.1"
+> set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Cyclone IV E}"
+> set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "addr_ccd_fifo.v"]
+> read_qip "test.qip"
+> set_global_assignment -name IP_TOOL_NAME "ALTLVDS_TX"
+> set_global_assignment -name IP_TOOL_VERSION "18.1"
+> set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Cyclone IV E}"
+> set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "test.v"]
+> set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "test.ppf"]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[10]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[11]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[12]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[13]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[14]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[1]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[2]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[3]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[4]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[5]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[6]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[7]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[8]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_a[9]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_ba[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_ba[1]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_ba[2]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_cas_n
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_ck[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_ck_n[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_cke[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_cs_n[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_dm[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[1]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[2]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[3]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[4]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[5]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[6]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[7]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dqs[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_odt[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_ras_n
+> set_instance_assignment -name IO_STANDARD "SSTL-18 Class I" -to ddr2_we_n
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gpio[0]
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gpio[1]
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gpio[2]
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gpio[3]
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hdmi_clk_n
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hdmi_clk_p
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hdmi_d0_n
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hdmi_d0_p
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hdmi_d1_n
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hdmi_d1_p
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hdmi_d2_n
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hdmi_d2_p
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to sys_clk
+> set_instance_assignment -name IO_STANDARD "1.8 V" -to sys_rst
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to uart_rxd
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to uart_txd
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[10]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[11]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[12]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[13]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[14]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[1]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[2]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[3]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[4]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[5]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[6]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[7]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[8]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[9]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_ba[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_ba[1]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_ba[2]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_cas_n
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_ck[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_ck_n[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_cke[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_cs_n[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dm[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[1]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[2]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[3]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[4]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[5]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[6]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[7]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dqs[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_odt[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_ras_n
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_we_n
+> set_location_assignment PIN_D3 -to ddr2_a[0]
+> set_location_assignment PIN_A10 -to ddr2_a[10]
+> set_location_assignment PIN_B13 -to ddr2_a[11]
+> set_location_assignment PIN_C8 -to ddr2_a[12]
+> set_location_assignment PIN_A14 -to ddr2_a[13]
+> set_location_assignment PIN_C9 -to ddr2_a[14]
+> set_location_assignment PIN_C14 -to ddr2_a[1]
+> set_location_assignment PIN_D14 -to ddr2_a[2]
+> set_location_assignment PIN_D12 -to ddr2_a[3]
+> set_location_assignment PIN_A15 -to ddr2_a[4]
+> set_location_assignment PIN_A11 -to ddr2_a[5]
+> set_location_assignment PIN_A13 -to ddr2_a[6]
+> set_location_assignment PIN_D11 -to ddr2_a[7]
+> set_location_assignment PIN_B14 -to ddr2_a[8]
+> set_location_assignment PIN_B10 -to ddr2_a[9]
+> set_location_assignment PIN_D9 -to ddr2_ba[0]
+> set_location_assignment PIN_B4 -to ddr2_ba[1]
+> set_location_assignment PIN_E9 -to ddr2_ba[2]
+> set_location_assignment PIN_A3 -to ddr2_cas_n
+> set_location_assignment PIN_B12 -to ddr2_ck[0]
+> set_location_assignment PIN_A12 -to ddr2_ck_n[0]
+> set_location_assignment PIN_C3 -to ddr2_cke[0]
+> set_location_assignment PIN_D5 -to ddr2_cs_n[0]
+> set_location_assignment PIN_A4 -to ddr2_dm[0]
+> set_location_assignment PIN_E7 -to ddr2_dq[0]
+> set_location_assignment PIN_B6 -to ddr2_dq[1]
+> set_location_assignment PIN_A7 -to ddr2_dq[2]
+> set_location_assignment PIN_B5 -to ddr2_dq[3]
+> set_location_assignment PIN_B7 -to ddr2_dq[4]
+> set_location_assignment PIN_E8 -to ddr2_dq[5]
+> set_location_assignment PIN_A5 -to ddr2_dq[6]
+> set_location_assignment PIN_E6 -to ddr2_dq[7]
+> set_location_assignment PIN_A6 -to ddr2_dqs[0]
+> set_location_assignment PIN_D6 -to ddr2_odt[0]
+> set_location_assignment PIN_B3 -to ddr2_ras_n
+> set_location_assignment PIN_B11 -to ddr2_we_n
+> set_location_assignment PIN_P2 -to gpio[0]
+> set_location_assignment PIN_G5 -to gpio[1]
+> set_location_assignment PIN_C2 -to gpio[2]
+> set_location_assignment PIN_R1 -to gpio[3]
+> set_location_assignment PIN_F1 -to hdmi_clk_n
+> set_location_assignment PIN_F2 -to hdmi_clk_p
+> set_location_assignment PIN_G1 -to hdmi_d0_n
+> set_location_assignment PIN_G2 -to hdmi_d0_p
+> set_location_assignment PIN_J1 -to hdmi_d1_n
+> set_location_assignment PIN_J2 -to hdmi_d1_p
+> set_location_assignment PIN_K1 -to hdmi_d2_n
+> set_location_assignment PIN_K2 -to hdmi_d2_p
+> set_location_assignment PIN_E1 -to sys_clk
+> set_location_assignment PIN_B16 -to sys_rst
+> set_location_assignment PIN_L1 -to uart_rxd
+> set_location_assignment PIN_L2 -to uart_txd
+## CPU time: 0:0:0, REAL time: 0:0:1
+## Memory Usage: 895MB (896MB)
+Using design SDC file ./test_Briey.sdc.
+
+#**************************************************************
+# Time Information
+#**************************************************************
+
+set_time_format -unit ns -decimal_places 3
+
+derive_pll_clocks -create_base_clocks
+Info: Auto constraint PLL: create_clock -name sys_clk -period 10.000 sys_clk.
+Info: Auto constraint PLL: create_generated_clock -name DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1] -divide_by 25 -multiply_by 32 -phase 90.000000 -add -source sys_clk -master_clock sys_clk DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clkout0.
+Info: Auto constraint PLL: create_generated_clock -name DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3] -divide_by 25 -multiply_by 16 -add -source sys_clk -master_clock sys_clk DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clkout1.
+Info: Auto constraint PLL: create_generated_clock -name DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2] -divide_by 25 -multiply_by 32 -phase 270.000000 -add -source sys_clk -master_clock sys_clk DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clkout2.
+Info: Auto constraint PLL: create_generated_clock -name DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0] -divide_by 25 -multiply_by 32 -add -source sys_clk -master_clock sys_clk DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clkout3.
+Info: Auto constraint PLL: create_generated_clock -name dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0] -multiply_by 5 -phase -90.000000 -add -source DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clkout1 -master_clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3] dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clkout0.
+Info: Auto constraint PLL: create_generated_clock -name dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1] -phase -18.000000 -add -source DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clkout1 -master_clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3] dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clkout1.
+
+derive_clock_uncertainty
+
+
+set_false_path -from *|DDR2_wr_data_fifo_16:wr_data_fifo_160|rst_r1 -to *
+Warn: [set_false_path] Unrecognized object *|DDR2_wr_data_fifo_16:wr_data_fifo_160|rst_r1, must be Clock {Register Term} {Pin Term} Instance.
+set_false_path -from *|DDR2_rd_wr_addr_fifo_0:rd_wr_addr_fifo_00|rst_r1 -to *
+Warn: [set_false_path] Unrecognized object *|DDR2_rd_wr_addr_fifo_0:rd_wr_addr_fifo_00|rst_r1, must be Clock {Register Term} {Pin Term} Instance.
+
+#**************************************************************
+# Create Clock
+#**************************************************************
+
+
+# create_clock -period 100.000 [get_ports {jtck}]
+create_clock -name {sys_clk} -period 10.000 -waveform { 0.000 5.000 } [get_ports {sys_clk}]
+Info: Clock sys_clk is overwriting an existing clock.
+
+create_clock -name {cpu_clk} -period 15.625 [get_nets {cpu_pll_u0|altpll_component|auto_generated|wire_pll1_clk[0]}]
+Warn: [get_nets] Can not find net {cpu_pll_u0|altpll_component|auto_generated|wire_pll1_clk[0]}.
+create_clock -name {vid_clk} -period 15.625 [get_nets {cpu_pll_u0|altpll_component|auto_generated|wire_pll1_clk[1]}]
+Warn: [get_nets] Can not find net {cpu_pll_u0|altpll_component|auto_generated|wire_pll1_clk[1]}.
+
+
+#**************************************************************
+# Create Generated Clock
+#**************************************************************
+
+set_false_path -from [get_registers {*dcfifo*delayed_wrptr_g[*]}] -to [get_registers {*dcfifo*rs_dgwp*}]
+
+set_false_path -from [get_registers {*dcfifo*rdptr_g[*]}] -to [get_registers {*dcfifo*ws_dgrp*}]
+Warn: [get_registers] Can not find reg *dcfifo*ws_dgrp*.
+
+set_false_path -from [get_registers {*altsyncram*:fifo_ram|ram_block[*]}] -to [get_registers {*altsyncram*:fifo_ram|rd_data_out_latch[*]}]
+Warn: [get_registers] Can not find reg {*altsyncram*:fifo_ram|ram_block[*]}.
+Warn: [get_registers] Can not find reg {*altsyncram*:fifo_ram|rd_data_out_latch[*]}.
+
+#**************************************************************
+# Set Clock Latency
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Clock Uncertainty
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Input Delay
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Output Delay
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Clock Groups
+#**************************************************************
+
+
+
+#**************************************************************
+# Set False Path
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Multicycle Path
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Maximum Delay
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Minimum Delay
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Input Transition
+#**************************************************************
+
+>  set pl_criticality_wratio  "2.50 2.50 2.50 1.00"
+> #set pl_max_iter_eco        "10 20 300 40 3  100 100 1"
+> ##et pl_eco_slack_crit      "99999. 1.00  0.10 7 0.03 30 0.01 150"
+> 
+> ##et pl_priority_compare  "2 2 2 3"
+> #set pl_priority_result   "2 1 1 0"
+> #set pl_priority_pass     "2 1 1 0"
+> #set pl_swap_cost_margin       "200.0  0.0  200.0  0.0  200.0  0.0   0.00  0.0"
+>  set pl_swap_wirelength_margin "200.0  0.0  200.0  0.0  200.0  0.0   020.0 -0.3  2000. 1.50"
+>  set pl_swap_congestion_margin "100.0  0.0  100.0  0.0  100.0  0.0   010.0 -0.3  1000. 1.25"
+> #set pl_criticality_beta "1.0 3.0 1.0  1.0 3.0 1.0  1.0 3.0 1.0  99999 3.0 3.0"
+> #set pl_oci_iter "1 1 100 1"
+> 
+>  set rt_retiming_idx         5
+>  set rt_converge_accelerator "2 1 0 3"
+> #set rt_pres_cost_ratio      "1.00 1.50  2.00 2.50"
+>  set rt_dly_ratio            "0.55 0.35 0.30  0.50 0.50 0.30"
+>  set rt_reroute_max_iter     "6  5 6  7 9  12"
+>  set rt_reroute_start_iter   "0  1 2  2 4  0 "
+>  set rt_quick_converge_ratio 0.25
+>  set pl_reuse_existing_placement true
+>  set pl_fix_bram_cells 0
+>  set pl_fix_mult_cells 0
+>  set pl_neighbor_swap_range "3  6  6  3 "
+>  set pl_pass_result "1 1 1 1"
+>  set pl_max_pass    "1 1 1 1 1"
+>  set pl_max_iter       10
+>  set pl_max_iter_part  20
+>  set pl_max_iter_final 20
+>  set pl_max_iter_legal 10
+>  set pl_max_iter_touch 00
+> #set pl_neighbor_swap_range "2  6  6  3 "
+> #set pl_spread_swap_max_iter "3 5  5 4"
+> #set pl_use_initial_place_once 0
+>  set rt_min_converge "5"
+>  set rt_optimize_max "3"
+>  set pl_useful_skew_level 0
+>  set rt_useful_skew_level 0
+>  set rt_useful_skew_bram         true
+>  set rt_useful_skew_io           false
+>  set rt_useful_skew_io_ireg      false
+>  set rt_useful_skew_io_oreg      false
+>  set rt_useful_skew_output_io    false
+>  set rt_useful_skew_input_io     false
+>  set rt_useful_skew_unconstraint "false false"
+>  set rt_useful_skew_max                "1 100"
+>  set rt_skew_crit_minmax               "0.00 1.00"
+> #set rt_useful_skew_setup_slac_margin  "1.00 1.00  1.00 1.00  1.00 0.10 0.50 0.10 0.70 0.10  1.00"
+> #set rt_useful_skew_hold_slack_margin  "0.10 0.10  0.30 0.30  0.30 0.30"
+> #set rt_useful_skew_hold_slack_ratio   "0.05 0.05  0.10 0.10  0.10 0.10"
+> # Minimal logical slice hold fix, only by routing to bram/mult, no IO delay
+> 
+>  set ta_cross_clock_slack "2 0"
+> 
+> #set pl_max_iter_hold_fix "30 1 3"
+> #set pl_hold_slack_margin  0.2
+> #set pl_setup_slack_margin "0.5 -1000."
+> #set pl_net_hold_fix_target "alta_bram alta_bram9k alta_mult"
+> 
+>  set rt_hold_slack_margin  "0.2 0.2    0.2 0.2    0.2 0.7   -1000. 0.0"
+>  set rt_setup_slack_margin "0.5 -1000. 0.5 -1000. 0.0 -1000."
+> #set rt_net_hold_crit_minmax "0.5 0.5"
+>  set rt_net_hold_budget_method 0
+>  set rt_net_hold_fix_target "alta_bram alta_bram9k alta_mult"
+> 
+> #set pl_net_hold_fix_clock false
+> #set pl_net_hold_fix_auto  false
+> #set pl_net_hold_fix_io    false
+> #set rt_net_hold_fix_start false
+> #set rt_net_hold_fix_clock false
+> #set rt_net_hold_fix_auto  false
+> #set rt_net_hold_fix_io    false
+Using ASF file test_Briey.asf.
+> set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ddr2_dm[0] -section_id ddr2_dq_l
+> set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ddr2_dq[7] -section_id ddr2_dq_l
+> set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ddr2_dq[6] -section_id ddr2_dq_l
+> set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ddr2_dq[5] -section_id ddr2_dq_l
+> set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ddr2_dq[4] -section_id ddr2_dq_l
+> set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ddr2_dq[3] -section_id ddr2_dq_l
+> set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ddr2_dq[2] -section_id ddr2_dq_l
+> set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ddr2_dq[1] -section_id ddr2_dq_l
+> set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ddr2_dq[0] -section_id ddr2_dq_l
+> set_global_assignment -name ASSIGNMENT_GROUP_MEMBER ddr2_dqs[0] -section_id ddr2_dq_l
+> 
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_we_n
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_ras_n
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_odt[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[1]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[2]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[3]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[4]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[5]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[6]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dq[7]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dm[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_dqs[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[1]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[2]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[3]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[4]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[5]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[6]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[7]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[8]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[9]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[10]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[11]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[12]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[13]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_a[14]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_ba[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_ba[1]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_ba[2]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_cas_n
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_cke[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_cs_n[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_ck[0]
+> set_instance_assignment -name IO_STANDARD "SSTL-18 CLASS I" -to ddr2_ck_n[0]
+> 
+> set_location_assignment PIN_P2 -to gpio[0]
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gpio[0]
+> set_location_assignment PIN_G5 -to gpio[1]
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gpio[1]
+> set_location_assignment PIN_C2 -to gpio[2]
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gpio[2]
+> set_location_assignment PIN_R1 -to gpio[3]
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gpio[3]
+> 
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_ba[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_ba[1]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_ba[2]
+> 
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[1]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[2]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[3]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[4]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[5]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[6]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[7]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[8]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[9]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[10]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[11]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[12]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[13]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_a[14]
+> 
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[1]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[2]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[3]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[4]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[5]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[6]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dq[7]
+> 
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_cas_n
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_cke[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_cs_n[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_odt[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_ras_n
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_we_n
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_ck[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_ck_n[0]
+> set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr2_dqs[0]
+> 
+> set_location_assignment PIN_D3 -to ddr2_a[0]
+> set_location_assignment PIN_C14 -to ddr2_a[1]
+> set_location_assignment PIN_D14 -to ddr2_a[2]
+> set_location_assignment PIN_D12 -to ddr2_a[3]
+> set_location_assignment PIN_A15 -to ddr2_a[4]
+> set_location_assignment PIN_A11 -to ddr2_a[5]
+> set_location_assignment PIN_A13 -to ddr2_a[6]
+> set_location_assignment PIN_D11 -to ddr2_a[7]
+> set_location_assignment PIN_B14 -to ddr2_a[8]
+> set_location_assignment PIN_B10 -to ddr2_a[9]
+> set_location_assignment PIN_A10 -to ddr2_a[10]
+> set_location_assignment PIN_B13 -to ddr2_a[11]
+> set_location_assignment PIN_C8 -to ddr2_a[12]
+> set_location_assignment PIN_A14 -to ddr2_a[13]
+> set_location_assignment PIN_C9 -to ddr2_a[14]
+> 
+> set_location_assignment PIN_D9 -to ddr2_ba[0]
+> set_location_assignment PIN_B4 -to ddr2_ba[1]
+> set_location_assignment PIN_E9 -to ddr2_ba[2]
+> 
+> set_location_assignment PIN_A3 -to ddr2_cas_n
+> 
+> set_location_assignment PIN_C3 -to ddr2_cke[0]
+> set_location_assignment PIN_B12 -to ddr2_ck[0]
+> set_location_assignment PIN_A12 -to ddr2_ck_n[0]
+> set_location_assignment PIN_D5 -to ddr2_cs_n[0]
+> 
+> set_location_assignment PIN_A4 -to ddr2_dm[0]
+> set_location_assignment PIN_E7 -to ddr2_dq[0]
+> set_location_assignment PIN_B6 -to ddr2_dq[1]
+> set_location_assignment PIN_A7 -to ddr2_dq[2]
+> set_location_assignment PIN_B5 -to ddr2_dq[3]
+> set_location_assignment PIN_B7 -to ddr2_dq[4]
+> set_location_assignment PIN_E8 -to ddr2_dq[5]
+> set_location_assignment PIN_A5 -to ddr2_dq[6]
+> set_location_assignment PIN_E6 -to ddr2_dq[7]
+> set_location_assignment PIN_A6 -to ddr2_dqs[0]
+> 
+> set_location_assignment PIN_D6 -to ddr2_odt[0]
+> set_location_assignment PIN_B3 -to ddr2_ras_n
+> set_location_assignment PIN_B11 -to ddr2_we_n
+> 
+> set_location_assignment PIN_E1 -to sys_clk
+> set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to sys_clk
+> 
+> set_location_assignment PIN_B16 -to sys_rst
+> set_instance_assignment -name IO_STANDARD "1.8 V" -to sys_rst
+> 
+> set_location_assignment PIN_L1 -to uart_rxd
+> set_location_assignment PIN_L2 -to uart_txd
+> set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to uart_rxd
+> set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to uart_txd
+Placement Statistics
+ Total  Logic    Counts  : 7323/16624 (44.1%)
+ Total  Logic    Tiles   : 572/1039 (55.1%)
+ Total  Other    Tiles   : 46/112 (41.1%)
+ Total  Valid    Nets    : 10706 (5482+5224)
+ Total  Valid    Fanouts : 45874 (24711+21163)
+ Total  Tile     Fanouts : 10955
+ Tile   Zip      Fanins  : 15 (0:56)
+ Tile   Zip      Fanouts : 25 (0:292)
+ Total  Ignored  Nets    : 5527
+ Total  Valid    Blocks  : 630 (595/33)
+ Total  Ignored  Blocks  : 0
+ Total  Zip Complexities : 4294/15641 1.83/7868.48
+ Avg    Zip   Bottleneck : 5.87 61.87
+ Avg    Net   Bottleneck : 17.83 559.59
+Warn: Found CDC clock enable clken_ctrl_X1_Y20_N1|ClkEn, from clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1] to dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0].
+Warn: Found CDC clock enable clken_ctrl_X3_Y20_N0|ClkEn, from clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1] to dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0].
+Warn: Found CDC clock enable clken_ctrl_X3_Y20_N1|ClkEn, from clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1] to dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0].
+Iter #1/1 ...
+Pass 1 #1/1 ...
+Partitioning...
+ step = 3, partition : 5,5
+....................
+ step = 4, partition : 2,2
+....................
+ step = 5, partition : 2,2
+....................
+
+## CPU time: 0:0:27, REAL time: 0:0:29
+Pass 2 #1/1 ...
+Legalization and Swapping...
+..........
+
+## CPU time: 0:0:40, REAL time: 0:0:43
+Pass 3 #1/1 ...
+Touchup...
+
+
+## CPU time: 0:0:0, REAL time: 0:0:0
+Pass 4 #1/1 ...
+Optimization...
+............................................................
+Finishing...
+
+## CPU time: 0:0:28, REAL time: 0:0:30
+Total wire cost after placement: -12.499:-9.9992:0.292(-12.499:-9.9992) 24538(4199.08)+81828(0)+32026.1 30319.6(12452.9)+14923.5
+
+*** Post Placement Timing Report ***
+=== User constraints ===
+Fmax report
+  User constraint: 128.000MHz, Fmax: 123.885MHz, Clock: DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  User constraint: 128.000MHz, Fmax: 178.285MHz, Clock: DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1]
+  User constraint: 128.000MHz, Fmax: 206.868MHz, Clock: DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2], Restricted Fmax: 200.080MHz
+  User constraint:  64.000MHz, Fmax:  76.161MHz, Clock: DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+  User constraint: 320.000MHz, Fmax: 327.118MHz, Clock: dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]
+  User constraint:  64.000MHz, Fmax: 1394.698MHz, Clock: dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1], Restricted Fmax: 500.000MHz
+  User constraint: 100.000MHz, Fmax: 480.308MHz, Clock: sys_clk
+
+Clock transfer report:
+  Worst setup:  -0.260, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst setup:   2.203, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1]
+  Worst setup:   2.979, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2]
+  Worst setup:   2.495, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+  Worst setup:   0.068, with clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]
+  Worst setup:  14.908, with clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]
+  Worst setup:   7.918, with clock sys_clk
+  Worst setup:  -3.796, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1]
+  Worst setup:   0.730, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2]
+  Worst setup:  -0.270, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+  Worst setup:   1.430, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst setup:   2.352, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2]
+  Worst setup:   0.150, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst setup:   1.420, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst setup:   9.253, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3] to dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]
+  Worst setup:   0.165, from clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1] to dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]
+  Worst setup: -10.312, from clock sys_clk to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst setup: -12.499, from clock sys_clk to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+
+  Worst  hold:   0.292, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst  hold:   0.550, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1]
+  Worst  hold:   0.476, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2]
+  Worst  hold:   0.292, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+  Worst  hold:   0.550, with clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]
+  Worst  hold:   0.550, with clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]
+  Worst  hold:   0.990, with clock sys_clk
+  Worst  hold:   2.768, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1]
+  Worst  hold:   2.784, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2]
+  Worst  hold:   2.277, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+  Worst  hold:   2.864, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst  hold:   4.780, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2]
+  Worst  hold:   6.770, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst  hold:   5.285, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst  hold:   3.452, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3] to dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]
+  Worst  hold:   0.865, from clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1] to dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]
+  Worst  hold:  12.750, from clock sys_clk to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst  hold:   7.913, from clock sys_clk to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+
+=== Auto constraints ===
+
+
+Coverage report
+  User constraints covered 31379 connections out of 31461 total, coverage: 99.7%
+  Auto constraints covered 31379 connections out of 31461 total, coverage: 99.7%
+
+
+Setup from bdcer_u0|debounce_rst to bus_mapper_u0|addr_ccd_fifo_u0|dcfifo_component|auto_generated|wraclr|dffe12a[0], clock sys_clk to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3], constraint 1.250, skew -4.210, data 9.400
+  Slack: -12.499
+    Arrival Time:   43.163
+    Required Time:  30.664
+
+*** End Timing Report ***
+
+route_design -dump ./alta_db/route.tx -replace ./alta_db/replace.tx 
+Route Design Statistics
+ Total Routing Nets : 10709
+ Fanout     Average : 3.29 (1..671)
+ Max   Fanout  Net  : DDR2_inst0|infrastructure0|altpll_component|auto_generated|wire_pll1_clk[3]~clkctrl_outclk
+ Logic       Slices : 7323/16624 (44.1%)
+
+Routing...
+ Budget Useful Skew...
+## CPU time: 0:0:3, REAL time: 0:0:4
+ iter = 1/1, route#: 10709, violation# : 4285, overflow# : 4086, conflict# : 4365, node#: 64573
+## CPU time: 0:0:6, REAL time: 0:0:7
+ iter = 2/2, route#: 10709, violation# : 3081, overflow# : 3047, conflict# : 3219, node#: 67009
+## CPU time: 0:0:8, REAL time: 0:0:9
+ iter = 3/3, route#: 10709, violation# : 1413, overflow# : 1411, conflict# : 1694, node#: 69436
+## CPU time: 0:0:11, REAL time: 0:0:12
+ iter = 4/4, route#: 10709, violation# : 270, overflow# : 270, conflict# : 396, node#: 71210
+## CPU time: 0:0:14, REAL time: 0:0:15
+ iter = 5/5, route#: 10709, violation# : 23, overflow# : 23, conflict# : 46, node#: 71673
+## CPU time: 0:0:16, REAL time: 0:0:17
+ iter = 6/6, route#: 10709, violation# : 3, overflow# : 3, conflict# : 6, node#: 71755
+## CPU time: 0:0:19, REAL time: 0:0:20
+ iter = 7/7, route#: 10709, violation# : 3, overflow# : 3, conflict# : 6, node#: 71813
+## CPU time: 0:0:20, REAL time: 0:0:21
+ iter = 8/5, route#: 13, violation# : 3, overflow# : 3, conflict# : 6, node#: 71804
+## CPU time: 0:0:20, REAL time: 0:0:22
+ iter = 9/6, route#: 14, violation# : 2, overflow# : 2, conflict# : 4, node#: 71811
+## CPU time: 0:0:21, REAL time: 0:0:23
+ iter = 10/7, route#: 12, violation# : 1, overflow# : 1, conflict# : 2, node#: 71819
+## CPU time: 0:0:22, REAL time: 0:0:23
+ iter = 11/8, route#: 10, violation# : 1, overflow# : 1, conflict# : 2, node#: 71820
+## CPU time: 0:0:23, REAL time: 0:0:24
+ iter = 12/9, route#: 8, violation# : 1, overflow# : 1, conflict# : 2, node#: 71820
+## CPU time: 0:0:24, REAL time: 0:0:25
+ iter = 13/10, route#: 10, violation# : 1, overflow# : 1, conflict# : 2, node#: 71822
+## CPU time: 0:0:24, REAL time: 0:0:25
+ iter = 14/5, route#: 1, violation# : 1, overflow# : 1, conflict# : 2, node#: 71822
+## CPU time: 0:0:24, REAL time: 0:0:25
+ iter = 15/6, route#: 3, violation# : 1, overflow# : 1, conflict# : 2, node#: 71823
+## CPU time: 0:0:24, REAL time: 0:0:25
+ iter = 16/7, route#: 3, violation# : 1, overflow# : 1, conflict# : 2, node#: 71823
+## CPU time: 0:0:24, REAL time: 0:0:25
+ iter = 17/8, route#: 2, violation# : 1, overflow# : 1, conflict# : 2, node#: 71823
+## CPU time: 0:0:24, REAL time: 0:0:25
+ iter = 18/9, route#: 3, violation# : 1, overflow# : 1, conflict# : 2, node#: 71824
+## CPU time: 0:0:24, REAL time: 0:0:25
+ iter = 19/10, route#: 3, violation# : 1, overflow# : 1, conflict# : 2, node#: 71823
+## CPU time: 0:0:24, REAL time: 0:0:25
+ iter = 20/5, route#: 1, violation# : 1, overflow# : 1, conflict# : 2, node#: 71822
+## CPU time: 0:0:24, REAL time: 0:0:25
+ iter = 21/6, route#: 1, violation# : 1, overflow# : 1, conflict# : 2, node#: 71822
+## CPU time: 0:0:25, REAL time: 0:0:27
+ iter = 22/7, route#: 1, violation# : 0, overflow# : 0, conflict# : 0, node#: 71823
+## CPU time: 0:0:26, REAL time: 0:0:28
+ iter = 23/2, route#: 16, violation# : 9, overflow# : 9, conflict# : 11, node#: 71804
+## CPU time: 0:0:27, REAL time: 0:0:29
+ iter = 24/3, route#: 13, violation# : 4, overflow# : 4, conflict# : 4, node#: 71804
+## CPU time: 0:0:28, REAL time: 0:0:30
+ iter = 25/4, route#: 13, violation# : 1, overflow# : 1, conflict# : 2, node#: 71810
+## CPU time: 0:0:30, REAL time: 0:0:31
+ iter = 26/5, route#: 8, violation# : 0, overflow# : 0, conflict# : 0, node#: 71812
+## CPU time: 0:0:31, REAL time: 0:0:32
+ iter = 27/3, route#: 14, violation# : 4, overflow# : 4, conflict# : 7, node#: 71811
+## CPU time: 0:0:32, REAL time: 0:0:34
+ iter = 28/4, route#: 10, violation# : 0, overflow# : 0, conflict# : 0, node#: 71812
+## CPU time: 0:0:33, REAL time: 0:0:35
+ iter = 29/3, route#: 14, violation# : 1, overflow# : 1, conflict# : 2, node#: 71817
+## CPU time: 0:0:35, REAL time: 0:0:37
+ iter = 30/4, route#: 8, violation# : 0, overflow# : 0, conflict# : 0, node#: 71816
+## CPU time: 0:0:36, REAL time: 0:0:38
+ iter = 31/3, route#: 9, violation# : 2, overflow# : 2, conflict# : 3, node#: 71822
+## CPU time: 0:0:38, REAL time: 0:0:40
+ iter = 32/4, route#: 8, violation# : 0, overflow# : 0, conflict# : 0, node#: 71821
+Optimizing...
+...
+Info: Location PIN_A2 is used as VREF for pin ddr2_dq[7].
+Info: Location PIN_C6 is used as VREF for pin ddr2_dq[5].
+
+Done
+
+*** Post Routing Timing Report ***
+=== User constraints ===
+Fmax report
+  User constraint: 128.000MHz, Fmax: 123.381MHz, Clock: DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  User constraint: 128.000MHz, Fmax: 172.741MHz, Clock: DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1]
+  User constraint: 128.000MHz, Fmax: 174.368MHz, Clock: DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2]
+  User constraint:  64.000MHz, Fmax:  71.058MHz, Clock: DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+  User constraint: 320.000MHz, Fmax: 366.032MHz, Clock: dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]
+  User constraint:  64.000MHz, Fmax: 1394.700MHz, Clock: dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1], Restricted Fmax: 500.000MHz
+  User constraint: 100.000MHz, Fmax: 480.308MHz, Clock: sys_clk
+
+Clock transfer report:
+  Worst setup:  -0.293, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst setup:   2.024, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1]
+  Worst setup:   2.077, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2]
+  Worst setup:   1.552, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+  Worst setup:   0.393, with clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]
+  Worst setup:  14.908, with clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]
+  Worst setup:   7.918, with clock sys_clk
+  Worst setup:  -2.177, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1]
+  Worst setup:   0.819, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2]
+  Worst setup:  -0.303, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+  Worst setup:   1.485, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst setup:   2.319, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2]
+  Worst setup:   0.150, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst setup:  -0.220, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst setup:   8.310, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3] to dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]
+  Worst setup:   0.370, from clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1] to dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]
+  Worst setup: -10.250, from clock sys_clk to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst setup: -12.438, from clock sys_clk to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+
+  Worst  hold:   0.292, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst  hold:   0.437, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1]
+  Worst  hold:   0.430, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2]
+  Worst  hold:   0.292, with clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+  Worst  hold:   0.550, with clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]
+  Worst  hold:   0.550, with clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]
+  Worst  hold:   0.990, with clock sys_clk
+  Worst  hold:   2.821, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1]
+  Worst  hold:   2.784, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2]
+  Worst  hold:   0.784, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+  Worst  hold:   2.940, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst  hold:   4.780, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[1] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2]
+  Worst  hold:   6.770, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[2] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst  hold:   5.017, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3] to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst  hold:   4.190, from clock DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3] to dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1]
+  Worst  hold:   0.252, from clock dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[1] to dvi_tx_top_inst0|dvi_if0|ALTLVDS_TX_component|auto_generated|lvds_tx_pll|clk[0]
+  Worst  hold:  10.936, from clock sys_clk to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[0]
+  Worst  hold:   6.213, from clock sys_clk to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3]
+
+=== Auto constraints ===
+
+
+Coverage report
+  User constraints covered 31379 connections out of 31461 total, coverage: 99.7%
+  Auto constraints covered 31379 connections out of 31461 total, coverage: 99.7%
+
+
+Setup from bdcer_u0|debounce_rst to bus_mapper_u0|addr_ccd_fifo_u0|dcfifo_component|auto_generated|wraclr|dffe12a[0], clock sys_clk to DDR2_inst0|infrastructure0|altpll_component|auto_generated|pll1|clk[3], constraint 1.250, skew -4.210, data 9.339
+  Slack: -12.438
+    Arrival Time:   43.102
+    Required Time:  30.664
+
+*** End Timing Report ***
+
+> 
+> if { [file exists "./${DESIGN}.post.asf"] } {
+  alta::tcl_highlight "Using post-ASF file ${DESIGN}.post.asf.\n"
+  source "./${DESIGN}.post.asf"
+}
+Using post-ASF file test_Briey.post.asf.
+> date_time
+
+> exit
+
+Total 0 fatals, 0 errors, 23 warnings, 52 infos.
