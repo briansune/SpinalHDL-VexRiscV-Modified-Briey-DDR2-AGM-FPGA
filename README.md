@@ -24,12 +24,12 @@ The DDR2 controller and bridge are not shared yet
 
 ## Result
 
-![FPGA Board - AG16KF256](image/board.jpg)
+<img src="image/board.JPG" width="400" />
 
 ### Default SpinalHDL Video Controller
 
-![Video DMA - R](image/720p_tile_red.jpg)
-
-![Video DMA - G](image/720p_tile_green.jpg)
-
-![Video DMA - B](image/720p_tile_blue.jpg)
+| Test Case | Image |
+|-|-|
+| R | <img src="image/720p_tile_red.JPG" width="400" /> |
+| G | <img src="image/720p_tile_green.JPG" width="400" /> |
+| B | <img src="image/720p_tile_blue.JPG" width="400" /> |
