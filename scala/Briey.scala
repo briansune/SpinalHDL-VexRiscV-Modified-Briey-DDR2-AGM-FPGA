@@ -66,7 +66,7 @@ case class BrieyConfig(
 
 object BrieyConfig {
   def default: BrieyConfig = default(false)
-  def default(withNorFlash: Boolean = false) = {
+  def default(withXip: Boolean = false) = {
     val config = BrieyConfig(
       axiFrequency = 64 MHz,
       onChipRamSize = 16 kB,
@@ -93,18 +93,18 @@ object BrieyConfig {
           timerWidth = 20
         )
       ),
-      flashConfig = ifGen(withNorFlash)(
+      flashConfig = ifGen(withXip)(
         SpiXdrMasterCtrl.MemoryMappingParameters(
           SpiXdrMasterCtrl
             .Parameters(8, 12, SpiXdrParameter(2, 1, 1, 0, 0))
             .addFullDuplex(0, 1, false),
           cmdFifoDepth = 32,
           rspFifoDepth = 32,
-          // xip = SpiXdrMasterCtrl
-          //   .XipBusParameters(addressWidth = 24, lengthWidth = 10)
+          xip = SpiXdrMasterCtrl
+            .XipBusParameters(addressWidth = 24, lengthWidth = 10)
         )
       ),
-      hardwareBreakpointCount = if (withNorFlash) 3 else 0,
+      hardwareBreakpointCount = if (withXip) 3 else 0,
       cpuPlugins = ArrayBuffer(
         new PcManagerSimplePlugin(0x80000000L, false),
         //          new IBusSimplePlugin(
@@ -112,7 +112,7 @@ object BrieyConfig {
         //            catchAccessFault = true
         //          ),
         new IBusCachedPlugin(
-          resetVector = if (withNorFlash) 0xe1000000L else 0x80000000L,
+          resetVector = if (withXip) 0xE1000000L else 0x80000000L,
           prediction = STATIC,
           config = InstructionCacheConfig(
             cacheSize = 4096,
@@ -194,6 +194,7 @@ object BrieyConfig {
             misaExtensionsInit = 66,
             misaAccess = CsrAccess.NONE,
             mtvecAccess = CsrAccess.NONE,
+            // IRQ code location
             mtvecInit = 0x80000020L,
             mepcAccess = CsrAccess.READ_WRITE,
             mscratchGen = false,
@@ -225,8 +226,7 @@ class Briey(val config: BrieyConfig) extends Component {
   val debug = true
   val interruptCount = 4
   def vgaRgbConfig = RgbConfig(5, 6, 5)
-
-  // def byteAddressWidth = bankWidth + columnWidth + rowWidth + log2Up(bytePerWord)
+  // BANK=3, Row=15, Col=10, 8 bit
   def byteAddressWidth = 3 + 10 + 15 + log2Up(1)
   def capacity = BigInt(1) << byteAddressWidth
 
@@ -362,7 +362,7 @@ class Briey(val config: BrieyConfig) extends Component {
       )
 
       timerInterrupt := timerCtrl.io.interrupt
-      externalInterrupt := BufferCC(io.coreInterrupt)
+      ifGen(!genBootloader)(externalInterrupt := BufferCC(io.coreInterrupt))
 
       val cpu = new VexRiscv(config)
       io.softReset := BufferCC(cpu.service(classOf[DebugPlugin]).io.resetOut)
@@ -401,27 +401,22 @@ class Briey(val config: BrieyConfig) extends Component {
 
       val bootlaoder = Axi4SharedOnChipRam(
         dataWidth = 32,
-        byteCount = 128 * 4,
+        byteCount = 64 * 4,
         idWidth = 4
       )
       HexTools.initRam(
         bootlaoder.ram,
-        "src/main/c/briey/xipBootloader/crt_nor.hex",
+        "src/main/c/briey/xipBootloader/crt.hex",
         0xe1000000L
       )
 
       val ctrl = Apb3SpiXdrMasterCtrl(flashConfig)
       apbMapping += ctrl.io.apb -> (0x1f000, 4 kB)
       ctrl.io.spi <> io.xip
-      // val xipBus = Axi4Config(
-      //   addressWidth = 24,
-      //   dataWidth = 32,
-      //   idWidth = 4
-      // )
 
-      axiCrossbar.addSlave(bootlaoder.io.axi, (0xe1000000L, 512 Byte))
-      core_ibus_list ++= Seq(bootlaoder.io.axi)
-      core_dbus_list ++= Seq(bootlaoder.io.axi)
+      axiCrossbar.addSlave(bootlaoder.io.axi, (0xe1000000L, 256 Byte))
+      core_ibus_list += bootlaoder.io.axi
+      core_dbus_list += bootlaoder.io.axi
 
       axiCrossbar.addPipelining(bootlaoder.io.axi)((crossbar, ctrl) => {
         crossbar.sharedCmd.halfPipe() >> ctrl.sharedCmd
@@ -430,18 +425,25 @@ class Briey(val config: BrieyConfig) extends Component {
         crossbar.readRsp << ctrl.readRsp
       })
 
-      // val xipAxiS = ctrl.io.xip.fromAxi4Shared(xipBus)
-      // axiCrossbar.addSlave(xipAxiS, (0xe0000000L, 16 MB))
-      // core_dbus_list ++= Seq(xipAxiS, bootlaoder.io.axi)
+      val xipBus = Axi4Config(
+        addressWidth = 24,
+        dataWidth = 32,
+        idWidth = 4
+      )
 
-      // axiCrossbar.addPipelining(xipAxiS)((crossbar, ctrl) => {
-      //   crossbar.sharedCmd.halfPipe() >> ctrl.sharedCmd
-      //   crossbar.writeData >/-> ctrl.writeData
-      //   crossbar.writeRsp << ctrl.writeRsp
-      //   crossbar.readRsp << ctrl.readRsp
-      // })
+      val xipAxiS = ctrl.io.xip.fromAxi4Shared(xipBus)
+      axiCrossbar.addSlave(xipAxiS, (0xe0000000L, 16 MB))
+      core_ibus_list += xipAxiS
+      core_dbus_list += xipAxiS
 
-      // externalInterrupt := (ctrl.io.interrupt)
+      axiCrossbar.addPipelining(xipAxiS)((crossbar, ctrl) => {
+        crossbar.sharedCmd.halfPipe() >> ctrl.sharedCmd
+        crossbar.writeData >/-> ctrl.writeData
+        crossbar.writeRsp << ctrl.writeRsp
+        crossbar.readRsp << ctrl.readRsp
+      })
+
+      externalInterrupt := (ctrl.io.interrupt)
     })
 
     axiCrossbar.addConnections(
